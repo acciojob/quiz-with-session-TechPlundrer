@@ -31,10 +31,10 @@ submitButton.addEventListener("click", function () {
     }
   }
 
-  const resultText = "Your score is " + score + " out of 5.";
-  scoreElement.textContent = resultText;
+  scoreElement.textContent = "Your score is " + score + " out of 5.";
 
-  localStorage.setItem("score", resultText);
+  // Store ONLY the number
+  localStorage.setItem("score", score);
 });
 // Do not change code below this line
 // This code will just display the questions to the screen
